@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val displayTextView = findViewById<TextView>(R.id.textDisplay)
 
 
-        val numberArray = Array(50) {i -> (i*2)}
+        val numberArray = Array(50) {i -> (i+1) * 2}
 
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, numberArray)
